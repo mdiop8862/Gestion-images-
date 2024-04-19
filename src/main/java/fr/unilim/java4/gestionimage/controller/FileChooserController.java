@@ -31,7 +31,7 @@ public class FileChooserController {
         if(fileSelected != null) {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view/traitement.fxml"));
             Parent root = fxmlLoader.load();
-            traitementController tc = fxmlLoader.getController();
+            TraitementController tc = fxmlLoader.getController();
             tc.displayImageSelected(fileSelected);
             Scene newScene = new Scene(root, 600, 700);
             Stage primaryStage =(Stage) mybtn.getScene().getWindow() ;

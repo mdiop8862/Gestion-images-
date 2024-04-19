@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1cf2fad-98cf-4047-8119-c1415b641d1e" name="Changes" comment="" />
+    <list default="true" id="b1cf2fad-98cf-4047-8119-c1415b641d1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreGBR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreNoirBlanc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreSepia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreSobel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Symetrie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/SymetrieHorizontal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/SymetrieVertical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/FileChooserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/FileChooserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/traitementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/TraitementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/traitement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/traitement.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +29,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -34,27 +53,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Moussa Diop/IdeaProjects/Image-management-tool-main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Moussa Diop/IdeaProjects/Doumbouya_Amazigh",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Moussa Diop\IdeaProjects\GestionImage\src\main\resources\fr\unilim\java4\gestionimage\view" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.unilim.java4.gestionimage" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,10 +95,24 @@
       <workItem from="1713178549449" duration="9839000" />
       <workItem from="1713266788443" duration="2635000" />
       <workItem from="1713309134096" duration="1023000" />
+      <workItem from="1713357388596" duration="4923000" />
+      <workItem from="1713438615992" duration="11038000" />
+      <workItem from="1713455131297" duration="9377000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Filter.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
