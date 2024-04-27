@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1cf2fad-98cf-4047-8119-c1415b641d1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Cryptographie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/JsonManipulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/model/Images.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Rotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/DatabaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/ImageFoundController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/imageFound.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/FileChooserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/FileChooserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/TraitementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/TraitementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/model/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/model/Images.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/traitement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/traitement.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/meta.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -55,31 +60,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Moussa Diop/IdeaProjects/GestionImage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.12988506&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/javafx-sdk-16/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.12988506",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Moussa Diop\IdeaProjects\GestionImage\src\main\resources" />
@@ -89,6 +100,14 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="fr.unilim.java4.gestionimage" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-16.0.2-corretto-16.0.2-4caba194b151-cab9e76a" />
+        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,7 +129,14 @@
       <workItem from="1713690474597" duration="2841000" />
       <workItem from="1713694630414" duration="7318000" />
       <workItem from="1713724793056" duration="13666000" />
-      <workItem from="1713776255439" duration="21517000" />
+      <workItem from="1713776255439" duration="21901000" />
+      <workItem from="1713877358546" duration="1891000" />
+      <workItem from="1713915388078" duration="755000" />
+      <workItem from="1713999890166" duration="19116000" />
+      <workItem from="1714050314841" duration="14518000" />
+      <workItem from="1714121222739" duration="2346000" />
+      <workItem from="1714173524217" duration="9000" />
+      <workItem from="1714215157664" duration="7402000" />
     </task>
     <servers />
   </component>

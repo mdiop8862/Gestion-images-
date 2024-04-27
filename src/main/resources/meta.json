@@ -3,15 +3,16 @@
     "Identifiant": 0,
     "Path": "file:/C:/Users/Moussa%20Diop/IdeaProjects/GestionImage/src/main/resources/fr/unilim/java4/gestionimage/images/couture.jpg",
     "Tags": [
-      "beaute",
+      "mode",
       "coiffure"
     ],
     "Transformations": [
       "Symetrie verticale",
       "Symetrie Horizontal",
       "filtre sobel",
-      "filtre noir et blanc",
-      "filtre sepia"
+      "filtre gbr",
+      "filtre sepia",
+      "rotation"
     ]
   }
 ]

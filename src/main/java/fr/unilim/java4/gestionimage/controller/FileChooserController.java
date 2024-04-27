@@ -32,7 +32,7 @@ public class FileChooserController {
         Parent root = fxmlLoader.load();
 
         TraitementController tc = fxmlLoader.getController();
-        System.out.println("hello world");
+       // System.out.println("hello world");
         FileChooser fc = new FileChooser();
 
         fc.getExtensionFilters().addAll(
@@ -45,11 +45,10 @@ public class FileChooserController {
 
             String url = fileSelected.toURI().toString() ;
             tc.recup(url) ;
-            final GsonBuilder builder = new GsonBuilder().setPrettyPrinting();
-            final Gson gson = builder.create();
 
+/*
             try {
-                JsonManipulation manip = new JsonManipulation();
+               JsonManipulation manip = new JsonManipulation();
                 ArrayList<Images> imagesList = manip.ReadJsonFile();
                 Images image = new Images(imagesList.size() , url , new ArrayList<String>() , new ArrayList<String>()) ;
                 boolean imageAlreadyExist = false ;
@@ -72,7 +71,7 @@ public class FileChooserController {
                 e.printStackTrace();
             }
 
-
+*/
 
             tc.displayImageSelected(fileSelected);
             Scene newScene = new Scene(root, 600, 700);

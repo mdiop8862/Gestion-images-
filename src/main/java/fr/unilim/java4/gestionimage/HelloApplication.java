@@ -12,6 +12,8 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view/FileChooser.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
 
+
+
         stage.setTitle("Gestion d'image");
         stage.setScene(scene);
         stage.show();
