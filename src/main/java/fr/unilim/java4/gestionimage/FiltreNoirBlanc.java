@@ -12,6 +12,7 @@ public class FiltreNoirBlanc implements Filter {
         this.image = image ;
     }
 
+    // implementation de addFilter pour ajouter le filtre noir et blanc
     public Image AddFilter(){
         int width = (int) this.image.getWidth() ;
         int heigth = (int) this.image.getHeight();

@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1cf2fad-98cf-4047-8119-c1415b641d1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Rotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/DatabaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/ImageFoundController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/imageFound.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Cryptographie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/Cryptographie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreGBR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreGBR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreNoirBlanc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreNoirBlanc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreSepia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreSepia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreSobel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/FiltreSobel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/JsonManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/JsonManipulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/SymetrieHorizontal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/SymetrieHorizontal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/SymetrieVertical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/SymetrieVertical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/DatabaseController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/FileChooserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/FileChooserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/ImageFoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/ImageFoundController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/TraitementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/controller/TraitementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/model/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/unilim/java4/gestionimage/model/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/traitement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/view/traitement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/unilim/java4/gestionimage/meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +138,7 @@
       <workItem from="1714050314841" duration="14518000" />
       <workItem from="1714121222739" duration="2346000" />
       <workItem from="1714173524217" duration="9000" />
-      <workItem from="1714215157664" duration="7402000" />
+      <workItem from="1714215157664" duration="18158000" />
     </task>
     <servers />
   </component>

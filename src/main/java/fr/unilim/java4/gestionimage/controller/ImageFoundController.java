@@ -17,7 +17,7 @@ public class ImageFoundController {
     @FXML
     public GridPane gridpane;
 
-
+    // Méthode pour afficher la galerie d'images dans la grille
     public void displayGalerie(ArrayList<Images> Galerie) {
 
         int column = 0;

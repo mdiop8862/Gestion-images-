@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import fr.unilim.java4.gestionimage.model.Images;
-import javafx.scene.image.Image;
 
 import java.io.*;
 import java.lang.reflect.Type;
@@ -16,7 +15,7 @@ public class JsonManipulation {
     public final Gson gson = builder.create();
 
     public JsonManipulation(){
-        path = "C:/Users/Moussa Diop/IdeaProjects/GestionImage/src/main/resources/meta.json" ;
+        path = "src/main/resources/fr/unilim/java4/gestionimage/meta.json";
     }
 
     public ArrayList<Images> ReadJsonFile() throws IOException {

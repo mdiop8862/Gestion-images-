@@ -10,11 +10,15 @@ import java.security.SecureRandom;
 
 public class Cryptographie {
     public Image image ;
+
+
+    // le constucteur
     public Cryptographie(Image image){
         this.image = image ;
     }
 
 
+    // methode pour crypter l'image avec mot de passe
     public Image encryptImage(String password) throws NoSuchAlgorithmException {
         byte[] seed = Cryptographie.PasswordHash(password);
         SecureRandom random = new SecureRandom(seed);
@@ -36,6 +40,8 @@ public class Cryptographie {
 
         return encryptImage ;
     }
+
+    // hachage du mot de passe
     public static byte[] PasswordHash(String password) throws NoSuchAlgorithmException {
         byte[] passwordbyte = password.getBytes() ;
         MessageDigest mess = MessageDigest.getInstance("SHA-256");

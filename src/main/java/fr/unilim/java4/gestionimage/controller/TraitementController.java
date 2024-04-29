@@ -1,3 +1,4 @@
+
 package fr.unilim.java4.gestionimage.controller;
 
 import fr.unilim.java4.gestionimage.*;
@@ -31,27 +32,31 @@ public class TraitementController {
     public TextField password;
     public ImageView imageview2;
 
-   public static JsonManipulation manip = new JsonManipulation();
+    public static JsonManipulation manip = new JsonManipulation();
     public TextField inputTags;
     public TextField TagsSearched;
 
+    // Méthode pour afficher l'image sélectionnée dans l'interface
     public void displayImageSelected(File file){
         Image img = new Image(file.toURI().toString()) ;
         imageview.setImage(img);
     }
 
+    // methode pour recuperer l'url de l'image
     public void recup(String url){
         this.url = url ;
     }
 
+    // methodes pour effectuer des transformations sur l'image selectionner
     public void rotation() throws IOException {
-         Rotation rotation = new Rotation();
-         rotation.ApplyRotation(imageview);
+        Rotation rotation = new Rotation();
+        rotation.ApplyRotation(imageview);
 
-         ImageSaved.AddOnTransformation("rotation");
+        ImageSaved.AddOnTransformation("rotation");
 
 
     }
+
 
     public void ApplySymetricHorizontal() throws IOException {
         Symetrie sym = new SymetrieHorizontal(imageview.getImage()) ;
@@ -116,6 +121,8 @@ public class TraitementController {
 
     }
 
+    // methode pour crypter l'image en melangeant les pixela
+
     public void cryptImage() throws NoSuchAlgorithmException {
         Cryptographie crypt = new Cryptographie(imageview.getImage());
         Image imageCrypt = crypt.encryptImage(password.getText());
@@ -148,6 +155,9 @@ public class TraitementController {
     }
 
 
+
+    // methode pour enregistrer les transformations et tags
+
     public void Enregistrer() throws IOException {
         String content = inputTags.getText();
         String[] Tags = content.split(" ");
@@ -156,48 +166,54 @@ public class TraitementController {
         ListTags.addAll(Arrays.asList(Tags));
         ImageSaved.setPath(url);
         ImageSaved.setTags(ListTags);
+
+
         ArrayList<Images> imageList = manip.ReadJsonFile();
-        ImageSaved.setIdentifiant(imageList.size());
+
 
 
         boolean imageAlreadyExist = false ;
         for(Images im : imageList){
-                    if(im.Path.equals(ImageSaved.Path)){
-                          imageAlreadyExist = true ;
-                          ImageSaved = new Images();
-                          Alert alert = new Alert(Alert.AlertType.ERROR);
-                          alert.setTitle("enregistrement");
-                          alert.setHeaderText(null);
-                          alert.setContentText("L'image est deja enregestre ");
-                          alert.showAndWait();
-                          break ;
-                    }
+            if(im.Path.equals(ImageSaved.Path)){
+                imageAlreadyExist = true ;
+                ImageSaved = new Images();
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("enregistrement");
+                alert.setHeaderText(null);
+                alert.setContentText("L'image est deja enregestre ");
+                alert.showAndWait();
+                break ;
+            }
 
         }
 
         if(! imageAlreadyExist){
-                    imageList.add(ImageSaved);
-                    manip.WriteInJsonFile(imageList);
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("enregistrement");
-                    alert.setHeaderText(null);
-                    alert.setContentText("Enregistrer avec success");
-                    alert.showAndWait();
+            imageList.add(ImageSaved);
+            manip.WriteInJsonFile(imageList);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("enregistrement");
+            alert.setHeaderText(null);
+            alert.setContentText("Enregistrer avec success");
+            alert.showAndWait();
         }
+
+
 
 
 
     }
 
+
+    // methode pour rechercher et afficher les images enregistrer
     public  void searchImages() throws IOException {
 
-         FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("view/imageFound.fxml"));
-         Parent root = loader.load() ;
-         Scene newScene = new Scene(root , 600 , 700) ;
-         Stage newStage = new Stage();
-         ArrayList<Images> im = new ArrayList<Images>() ;
+        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("view/imageFound.fxml"));
+        Parent root = loader.load() ;
+        Scene newScene = new Scene(root , 600 , 700) ;
+        Stage newStage = new Stage();
+        ArrayList<Images> im = new ArrayList<Images>() ;
 
-         String[] tags = TagsSearched.getText().split(" ");
+        String[] tags = TagsSearched.getText().split(" ");
         ArrayList<String> tagsList = new ArrayList<String>() ;
 
         tagsList.addAll(Arrays.asList(tags));
@@ -212,8 +228,8 @@ public class TraitementController {
                 }
             }
         }
-          ImageFoundController gc = loader.getController();
-          gc.displayGalerie(imageFound);
+        ImageFoundController gc = loader.getController();
+        gc.displayGalerie(imageFound);
 
         newStage.setScene(newScene);
         newStage.show();

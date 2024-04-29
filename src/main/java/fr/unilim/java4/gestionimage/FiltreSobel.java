@@ -12,6 +12,8 @@ public class FiltreSobel implements Filter {
         this.image = image ;
     }
 
+
+    // implementation de addFilter pour ajouter le filtre sobel
     public Image AddFilter()  {
 
         int width = (int) image.getWidth();

@@ -26,59 +26,43 @@ public class FileChooserController {
     @FXML
     private Button mybtn ;
 
-
+    // Méthode appelée lors du clic sur le bouton
     public void handleButtonClick()  throws IOException{
+
+        // chargement de l'image
+
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view/traitement.fxml"));
         Parent root = fxmlLoader.load();
 
+        // Récupération du contrôleur de la fenêtre de traitement
+
         TraitementController tc = fxmlLoader.getController();
-       // System.out.println("hello world");
+
+        // Création d'un FileChooser pour choisir un fichier image
+
         FileChooser fc = new FileChooser();
+
+        // Définition des filtres pour n'afficher que les fichiers image
 
         fc.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif")
         ) ;
 
+        // Affichage de la fenêtre de choix de fichier
+
         File fileSelected = fc.showOpenDialog(new Stage());
+
+        // si un fichier est selection
 
         if(fileSelected != null) {
 
             String url = fileSelected.toURI().toString() ;
             tc.recup(url) ;
 
-/*
-            try {
-               JsonManipulation manip = new JsonManipulation();
-                ArrayList<Images> imagesList = manip.ReadJsonFile();
-                Images image = new Images(imagesList.size() , url , new ArrayList<String>() , new ArrayList<String>()) ;
-                boolean imageAlreadyExist = false ;
-                for(Images im : imagesList){
-                    if(im.Path.equals(image.Path)){
-                          imageAlreadyExist = true ;
-                          break ;
-                    }
-
-                }
-
-                if(! imageAlreadyExist){
-                    imagesList.add(image);
-                    manip.WriteInJsonFile(imagesList);
-                }
-
-
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-*/
-
             tc.displayImageSelected(fileSelected);
             Scene newScene = new Scene(root, 600, 700);
             Stage primaryStage =(Stage) mybtn.getScene().getWindow() ;
             primaryStage.setScene(newScene);
-
-
 
         }
 

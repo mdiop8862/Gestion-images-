@@ -12,6 +12,8 @@ public class SymetrieVertical implements Symetrie {
         this.image = image ;
     }
 
+
+    // implementation de SymetricTransformation pour effectuer la symetrie vertical de l'image
     public Image SymetricTransformation(){
         int width = (int) this.image.getWidth() ;
         int heigth = (int) this.image.getHeight() ;
